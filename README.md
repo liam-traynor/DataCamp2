@@ -50,6 +50,10 @@ brick_vector <- c(1, 2)
 taco_vector <- c(3, 4)
 sum(brick_vector) < sum(taco_vector)
 ### gives the response true
+### can select specific items from vectors using brackets
+sleep_vector <- c(6, 7, 8, 7, 8)
+sleep_vector[3]
+### gives the answer 8
 
 
 
