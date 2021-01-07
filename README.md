@@ -9,14 +9,14 @@
 
 
 ## Intro to basics
-#Modulo %% get the remainder
-#Assign Variables x <- etc
-#Add Variables together with operations
+### Modulo %% get the remainder
+### Assign Variables x <- etc
+### Add Variables together with operations
 my_apples <- 5
 my_oranges <- 6
 my_apples + my_oranges -> my_fruit
 my_fruit
-#check class with class(etc.)
+### check class with class(etc.)
 
 
 
