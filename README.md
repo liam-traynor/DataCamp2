@@ -21,35 +21,35 @@ my_fruit
 
 
 ## Vectors
-#create vector with c() the combine function
+### create vector with c() the combine function
 boolean_vector <- c(TRUE, FALSE, TRUE)
-#can also assign numeric values
-#can name vectors
+### can also assign numeric values
+### can name vectors
 my_vector <- c(35, 45)
 names(my_vector) <- c("Liam", "Traynor")
-#can save time by naming things vectors
-#like making a days vector in stead of typing out the days of the week everytime
-#Can act on vector values using operations
+### can save time by naming things vectors
+### like making a days vector in stead of typing out the days of the week everytime
+### Can act on vector values using operations
 A_vector <- c(1, 2)
 B_vector <- c(3, 4)
 total_vector <- A_vector + B_vector
 total_vector
-##Example
-# Poker and roulette winnings from Monday to Friday:
+### Example
+### Poker and roulette winnings from Monday to Friday:
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
 days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 
-# Assign to total_daily how much you won/lost on each day
+### Assign to total_daily how much you won/lost on each day
 total_daily <- poker_vector + roulette_vector
 total_daily
-#Can use greater than or less than symbols
+### Can use greater than or less than symbols
 brick_vector <- c(1, 2)
 taco_vector <- c(3, 4)
 sum(brick_vector) < sum(taco_vector)
-#gives the response true
+### gives the response true
 
 
 
