@@ -20,6 +20,7 @@ my_fruit
 
 
 
+
 ## Vectors
 ### create vector with c() the combine function
 boolean_vector <- c(TRUE, FALSE, TRUE)
@@ -54,6 +55,17 @@ sum(brick_vector) < sum(taco_vector)
 sleep_vector <- c(6, 7, 8, 7, 8)
 sleep_vector[3]
 ### gives the answer 8
+### can specify multiple by putting [c(etc.)]
+sleep_vector[c(1, 3, 5)]
+### gives answer 6 8 8
+### can use colon so select every value between the numbers
+names(sleep_vector) <- days_vector
+sleep_vector[3:5]
+### brings up wednesday thursday friday 8 7 8
+### can get the mean of a set of values by doing mean(etc.)
+mean(sleep_vector)
+### gives the answer 7.2
+
 
 
 
