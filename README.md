@@ -65,7 +65,15 @@ sleep_vector[3:5]
 ### can get the mean of a set of values by doing mean(etc.)
 mean(sleep_vector)
 ### gives the answer 7.2
-
+### can use comparison operators < for less than
+### > for greater than <= for less than or equal to >= for greater than or equal to == for equal to each other != not equal to each other
+sleep_vector[1:5] >= 7
+### Returns with Falst True True True True
+### can put vectors in brackets
+selection_vector <- sleep_vector[1:5] > 7
+sleep_vector[selection_vector] -> goodsleep_vector
+goodsleep_vector
+### returns with wednesday and friday both with values of 8
 
 
 
