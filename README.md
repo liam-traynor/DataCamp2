@@ -78,10 +78,56 @@ goodsleep_vector
 
 
 ## Matrices
-
+### Construct a matrix with 3 rows that contain the numbers 1 up to 9
+matrix(1:9, byrow = TRUE, nrow = 3)
+### The first argument is the collection of elements that R will arrange into the rows and columns of the matrix. Here, we use 1:9 which is a shortcut for c(1, 2, 3, 4, 5, 6, 7, 8, 9).
+### The argument byrow indicates that the matrix is filled by the rows. If we want the matrix to be filled by the columns, we just place byrow = FALSE.
+### The third argument nrow indicates that the matrix should have three rows.
+# Box office Star Wars (in millions!)
+new_hope <- c(460.998, 314.4)
+empire_strikes <- c(290.475, 247.900)
+return_jedi <- c(309.306, 165.8)
+### Create box_office
+box_office <- c(new_hope, empire_strikes, return_jedi)
+### Construct star_wars_matrix
+star_wars_matrix <- matrix(box_office, byrow = TRUE, nrow = 3)
+star_wars_matrix
+### can use vectors to name columns and rows
+regions <- c("US", "non-US")
+titles <- c("A New Hope", "The Empire Strikes Back", "Return of the Jedi")
+colnames(star_wars_matrix) <- regions
+rownames(star_wars_matrix) <- titles
+star_wars_matrix
+### can use rowSums() to sum row data
+rowSums(star_wars_matrix) -> worldwide_vector
+worldwide_vector
+### returns with worldwide totals for each movie
+### can bind new columns to matrices with cbind()
+cbind(star_wars_matrix, worldwide_vector) -> allwars_matrix
+allwars_matrix
+### result is original matrix with worldwide totals added
+### can add rows to matrices using rbind(etc.)
+### would look like rbind(star_wars_matrix, prequel_matrix) -> all_wars_matrix
+### all_wars_matrix would run with the prequel data added on
+### can use colSums to sum column data
+total_revenue_vector <- colSums(star_wars_matrix)
+total_revenue_vector
+### total revenue for the two columns is added up
+### can use brackets to take data from specific parts of a matrix
+### right side of the comma is for columns and the left side is for rows
+star_wars_matrix[,2] -> non_us_matrix
+non_us_matrix
+star_wars_matrix[1:2,2] -> non_us_some
+non_us_some
+### that last bit only used the first two rows and the second column
+### can apply mathematical operations to matrices
+star_wars_matrix / 5 -> visitors
+visitors
+### divides all of the matrix data by 5
+### can use mathematical operations to have matrices act on one another
 
 ## Factors
-
+The term factor refers to a statistical data type used to store categorical variables. The difference between a categorical variable and a continuous variable is that a categorical variable can belong to a limited number of categories. A continuous variable, on the other hand, can correspond to an infinite number of values.
 
 ## Data frames
 
