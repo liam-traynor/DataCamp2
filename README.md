@@ -149,6 +149,15 @@ factor_speed_vector
 summary(factor_speed_vector)
 
 ## Data frames
-
+### matrices where there is more than one type of info represented
+### head() and tail()
+### using str() allows you to see the structure or what is the make up of the data set
+### create vectors and use them to create a data.frame()
+### can use [] to get specific info from data frames
+### can use $ as a short cut if you want all the data in a column
+### can use subset() to get info from data frame
+### subset(planets_df, subset = etc.)
+### can have operators like greater than less than symbols etc. when specifying subset
+### can use order() to order values
 
 ## Lists
