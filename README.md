@@ -161,3 +161,24 @@ summary(factor_speed_vector)
 ### can use order() to order values
 
 ## Lists
+### can make a list using list()
+my_list <- list(my_vector, my_matrix, my_df)
+### .
+my_list
+### can name items on the list
+names(my_list) <- c("etc")
+###  can select components using [[etc]] or with using $
+### [[]] refers to the larger section of the list and you can follow that with[] to get a specific part of that sub section
+### Use the table from the exercise to define the comments and scores vectors
+scores <- c(4.6, 5, 4.8, 5, 4.2)
+comments <- c("I would watch it again", "Amazing!", "I liked it", "One of the best movies", "Fascinating plot") 
+
+### Save the average of the scores vector as avg_review  
+avg_review <- mean(scores)
+
+### Combine scores and comments into the reviews_df data frame
+reviews_df <- data.frame(scores, comments)
+
+### Create and print out a list, called departed_list
+departed_list <- list(movie_title, movie_actors, reviews_df, avg_review)
+ departed_list
